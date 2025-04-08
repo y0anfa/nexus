@@ -113,11 +113,12 @@ Templates are HTML files with Jinja2 templating. Available variables:
 
 Convert a single markdown file to PDF.
 
-```
+```bash
 nexus convert --input FILE --output FILE [OPTIONS]
 ```
 
 Options:
+
 - `--input`, `-i`: Path to the input markdown file (required)
 - `--output`, `-o`: Path to the output PDF file (required)
 - `--template`, `-t`: Path to a custom template file
@@ -128,11 +129,12 @@ Options:
 
 Convert all markdown files in a directory to PDFs.
 
-```
+```bash
 nexus batch-convert --input-dir DIR --output-dir DIR [OPTIONS]
 ```
 
 Options:
+
 - `--input-dir`, `-i`: Directory containing markdown files (required)
 - `--output-dir`, `-o`: Directory for output PDF files (required)
 - `--template`, `-t`: Path to a custom template file
@@ -144,11 +146,12 @@ Options:
 
 Initialize a new configuration file with default settings.
 
-```
+```bash
 nexus init [OPTIONS]
 ```
 
 Options:
+
 - `--output`, `-o`: Path to save the config file (default: config.yaml)
 
 ## Development

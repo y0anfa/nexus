@@ -5,13 +5,8 @@ from pathlib import Path
 from converter import convert_markdown_to_pdf
 from config import load_config, validate_config, get_default_config
 
-# Get version from pyproject.toml if available
-try:
-    import tomli
-    with open(Path(__file__).parent / 'pyproject.toml', 'rb') as f:
-        version = tomli.load(f).get('project', {}).get('version', '0.1.0')
-except (ImportError, FileNotFoundError):
-    version = '0.1.0'
+# Use hardcoded version
+version = '0.1.0'
 
 @click.group()
 @click.version_option(version)
